@@ -1,0 +1,27 @@
+.header{
+    background-color: azure;
+    height: 100vh;
+
+    &_nav{
+        background-color: black;
+        color: white;
+    }
+    &_link{
+        text-decoration: none;
+        color: white;
+    }
+
+    &_box{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding: 53px;
+    }
+
+    &_title{
+        font-family: "Poppins", sans-serif;
+        line-height: 1.0625;
+        letter-spacing: -1.2px;
+        font-size: 5rem;
+    }
+}
