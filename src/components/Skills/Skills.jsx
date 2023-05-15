@@ -1,11 +1,12 @@
 import React from 'react'
+import './Skills.scss'
 
 export const Skills = () => {
   return (
     <>
-        <div className='skills'>
+        <section className='skills'>
             <h3 className='skills_title'>¿Qué puedo hacer?</h3>
-        </div>
+        </section>
     </>
   )
 }
