@@ -1,5 +1,5 @@
 .header{
-    background-color: azure;
+    background-color: #ffffff;
     height: 100vh;
 
     &_nav{
@@ -16,12 +16,87 @@
         justify-content: center;
         height: 100%;
         padding: 53px;
+        gap: 40px;
+    }
+
+    &_little-box{
+        align-self: center;
+        width: 44vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+        padding-right: 57px;
     }
 
     &_title{
         font-family: "Poppins", sans-serif;
         line-height: 1.0625;
         letter-spacing: -1.2px;
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+
+    &_btn {
+        display: flex;
+        gap: 17px;
+    }
+
+    &_btn a{
+        text-decoration: none;
+    }
+
+    &_btn1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        background-color: #ffe800;
+        padding: 9px 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+        border-radius: 6px;
+        transition: 0.4s;
+    }
+
+    &_btn1:hover{
+        background-color: #bdb5b9;
+    }
+
+    &_btn2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        background-color: none;
+        padding: 9px 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+        border-radius: 6px;
+        transition: 0.4s;
+    }
+
+    &_btn2:hover{
+        background-color:#bdb5b9
+    }
+
+    &_rrss {
+        display: flex;
+        align-items: center;
+        margin-top: 15%;
+        gap: 25px;
+    }
+
+    &_rrss img{
+       width: 35px;
+       height: 35px;
+       object-fit: cover;
+    }
+
+    &_img{
+        height: 440px;
+        width: 550px;
+        object-fit: cover;
     }
 }
