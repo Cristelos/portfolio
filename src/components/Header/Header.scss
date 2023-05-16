@@ -74,6 +74,7 @@
         text-transform: uppercase;
         border-radius: 6px;
         transition: 0.4s;
+        cursor: pointer;
     }
 
     &_btn1:hover{
@@ -92,6 +93,7 @@
         text-transform: uppercase;
         border-radius: 6px;
         transition: 0.4s;
+        cursor: pointer;
     }
 
     &_btn2:hover{
@@ -102,7 +104,7 @@
         display: flex;
         align-items: center;
         margin-top: 15%;
-        gap: 25px;
+        gap: 17px;
     }
 
     &_rrss img{
