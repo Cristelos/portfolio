@@ -1,7 +1,13 @@
 import React from 'react'
+import { Nav } from '../../components/Header/Nav'
+import { Footer } from '../../components/Footer/Footer'
 
 export const AboutPage = () => {
   return (
-    <div>AboutPage</div>
+    <>
+      <Nav/>
+      <p>Estos es un descripción sobre mi</p>
+      <Footer/>
+    </>
   )
 }

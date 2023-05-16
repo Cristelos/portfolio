@@ -1,5 +1,5 @@
 .skills{
-    background-color: #fbf8f8;
+    background-color: #f5d012;
     padding: 10px 53px;
     text-align: center;
     display: flex;
@@ -54,5 +54,21 @@
     &_icons {
         width: 35px;
         height: 35px;
+    }
+
+    &_btn {
+        border: none;
+        border-radius: 50px;
+        padding: 8px;
+        width: 35px;
+        height: 35px;
+        background-color: #4cc7d0;
+        position: relative;
+        float: right;
+        transition: 0.4s;
+    }
+
+    &_btn:hover{
+        background-color: #EFEFF2;
     }
 }
