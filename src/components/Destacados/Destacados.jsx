@@ -5,7 +5,7 @@ export const Destacados = () => {
   return (
     <>
     <section className='destacados'>
-      <h3>Trabajos destacados</h3>
+      <h3 className='destacados_title'>Trabajos destacados</h3>
     </section>
     </>
   )
