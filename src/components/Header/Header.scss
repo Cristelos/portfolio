@@ -1,20 +1,37 @@
 .header{
     background-color: #ffffff;
-    height: 100vh;
+    height: 100%;
+    margin-bottom: 50px;
+
+    &_logo{
+        width: 70px;
+    }
 
     &_nav{
-        background-color: black;
-        color: white;
+        background-color: #ffffff;
+        color: #555454;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 6px;
     }
+
+    &_links {
+        display: flex;
+        gap: 80px;
+    }
+
     &_link{
+        font-family: "Poppins", sans-serif;
         text-decoration: none;
-        color: white;
+        color: #555454;
+        font-weight: 500;
     }
 
     &_box{
         display: flex;
         justify-content: center;
-        height: 100%;
         padding: 15px 53px;
         gap: 40px;
     }
