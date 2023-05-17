@@ -1,15 +1,9 @@
-.skills{
-    background-color: #f5d012;
-    padding: 10px 53px;
+.about{
+    background-color: #e8e8e8;
+    padding: 25px 53px;
     text-align: center;
 
-
-    &_title{
-        font-weight: 600;
-        font-size: 3.6rem;
-    }
-
-    &_box {
+    &_boxs {
         display: flex;
         flex-wrap: wrap;
         gap: 35px;
@@ -18,10 +12,27 @@
         margin: 50px 0;
     }
 
-    &_box1 {
+    &_box {
         text-align: left;
         display: flex;
         flex-direction: column;     
+    }
+
+    &_title {
+        font-weight: 600;
+        font-size: 3.6rem;
+    }
+
+    &_icons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    &_icon{
+        width: 82px;
     }
     &_text1 {
         width: 378px;
@@ -65,5 +76,16 @@
 
     &_btn:hover{
         background-color: #EFEFF2;
+    }
+
+    &_number{
+        background-color: #f5d012;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

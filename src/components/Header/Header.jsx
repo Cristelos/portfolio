@@ -23,7 +23,7 @@ export const Header = () => {
             </div>
           </div>
           <div className='header_little-box'>
-            <img src='https://i.pinimg.com/564x/6c/44/88/6c4488a59965a558800c4bc5f48ebe6a.jpg' alt='foto perfil' className='header_img' />
+            <img src='/assets/img-portada.png' alt='foto portada' className='header_img' />
           </div>
         </div>
       </header>
