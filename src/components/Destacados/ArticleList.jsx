@@ -26,10 +26,11 @@ export const ArticleList = ({ articles }) => {
                     </div>
                 </div>
             ))}
-            {expShown < articles.length && (
+            
+        </div>
+        {expShown < articles.length && (
                     <button className='btn-seeMore' onClick={addMore}> Mostrar más </button>
                     )}
-        </div>
         
     </>
   )
