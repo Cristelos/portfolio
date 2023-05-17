@@ -5,7 +5,7 @@ export const Nav = () => {
   return (
     <>
         <nav className='header_nav'>
-          <img src='/assets/logo-web.png' alt='Logo Patricia Fernández Ruibal' className='header_logo' />
+        <NavLink to="/"><img src='/assets/logo-web.png' alt='Logo Patricia Fernández Ruibal' className='header_logo' /></NavLink>
           <div className='header_links'>
             <NavLink to="/" className='header_link'>Home</NavLink>
             <NavLink to="/about" className='header_link'>About</NavLink>

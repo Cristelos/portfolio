@@ -19,7 +19,7 @@
 
     &_links {
         display: flex;
-        gap: 80px;
+        gap: 30px;
     }
 
     &_link{
@@ -27,6 +27,13 @@
         text-decoration: none;
         color: #555454;
         font-weight: 500;
+        padding: 7px 17px;
+        transition: 0.4s;
+    }
+
+    &_link:hover{
+        background-color: #f5d012;
+        border-radius: 4px;
     }
 
     &_box{
