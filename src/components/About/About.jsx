@@ -41,7 +41,7 @@ export const About = () => {
                     <div className='about_details'>
                     <div className='about_mix'>
                     <p className='about_number'>3</p>
-                        <h3>Soft Skils:</h3>
+                        <h3>Soft Skills:</h3>
                     </div>
                     <p className='about_text2'>Además de mis habilidades técnicas, soy una persona organizada, proactiva y orientada a resultados. Me gusta enfrentar nuevos desafíos y encontrar soluciones innovadoras para superarlos. También disfruto mantenerme actualizada con las últimas tendencias y tecnologías del mundo del desarrollo web y el diseño UX/UI.</p>
                     
