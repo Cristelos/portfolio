@@ -19,7 +19,6 @@ export const ArticleList = ({ articles }) => {
                     </div>
                     <div className='article-body'>
                         <h3>{article.title}</h3>
-                        <p>{article.description}</p>
                         <div className='article-footer'>
                             <span>{article.date} · </span>
                             <span>{article.ReadingTime}</span>

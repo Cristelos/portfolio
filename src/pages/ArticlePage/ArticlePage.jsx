@@ -4,6 +4,7 @@ import { Footer } from '../../components/Footer/Footer'
 import { Contact } from '../../components/Contact/Contact'
 import { useParams } from 'react-router-dom'
 import data from '../../data/data'
+import './ArticlePage.scss'
 // import axios from 'axios';
 
 export const ArticlePage = () => {
@@ -31,8 +32,19 @@ export const ArticlePage = () => {
   return (
     <>
         <Nav/>
-        <section>
-          <h2>{details.title}</h2>
+        <section className='article'>
+          <img src={details.image} alt={details.title} className='article_cover'/>
+          <div className='boxs'>
+            <div className='box'>
+              <img src={details.image} alt={details.title} className='article_img'/>
+            </div>
+            <div className='box'>
+              <h2>{details.title}</h2>
+              <p className='date'>{details.date}</p>
+              <p>{details.description}</p>
+              <a href={details.url}><button className='btn'>Ver más</button></a>
+            </div>
+          </div>
         </section>
         <Contact/>
         <Footer/>

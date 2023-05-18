@@ -19,3 +19,30 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1.0625;
   letter-spacing: -0.2px;
 }
+
+.boxs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 55px;
+  margin: 35px;
+}
+.date{
+  color: #8a8a8a;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn{
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  border: none;
+  background-color: #f5d012;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
