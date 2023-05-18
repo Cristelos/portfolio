@@ -14,13 +14,14 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 6px 57px;
+        padding: 0.3rem;
     }
 
     &_links {
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
+        padding: 7px;
     }
 
     &_link{
@@ -127,6 +128,78 @@
     }
 }
 
+nav {
+    width: 100%;
+    height: 5em;
+    background-color: rgb(37, 39, 53);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.burger-menu {
+    height: 100%;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding: 11px 13px;
+}
+
+.burger-bar {
+    width: 3em;
+    height: 0.2em;
+    background-color: #555454;
+    border-radius: 0.5em;
+    color: #ffffff;
+}
+
+.menu {
+    width: 74%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+}
+
+/* ------------- sliding menu ------------------ */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 1.6em;
+    line-height: 5.2rem;
+}
+
+/* ----- animations--------- */
+/* clicked */
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-0.5em, 1em);
+    transition: ease-out 0.5s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
 @media screen and (min-width: 0) and (max-width: 863px){
     .header{
         
@@ -140,6 +213,18 @@
             width: 100%;
             padding-right: 0;
         }
+        &_links{
+            display: none;
+        }
+        &_nav {
+            padding: 0.3rem;
+            margin-bottom: 13px;
+        }
     }
 
+}
+@media screen and (min-width: 864px){
+ .burger-menu{
+    display: none;
+ }
 }
