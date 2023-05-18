@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export const ArticleList = ({ articles }) => {
     
@@ -14,7 +15,7 @@ export const ArticleList = ({ articles }) => {
             {visibleArticles.map(article => (
                 <div className='article-conteiner' key={article.id}>
                     <div className='img-container'>
-                        <a href={article.url} target="_blank" rel="noopener noreferrer"><img src={article.image} alt={article.title}/></a>
+                       <NavLink to={`/article/${article.id}`}><img src={article.image} alt={article.title}/></NavLink>
                     </div>
                     <div className='article-body'>
                         <h3>{article.title}</h3>
