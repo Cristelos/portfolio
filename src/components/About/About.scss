@@ -29,6 +29,8 @@
         gap: 35px;
         align-items: center;
         margin-top: 15px;
+        width: 35px;
+        height: 35px;
     }
 
     &_icon{
@@ -54,11 +56,6 @@
         justify-content: flex-start;
         align-items: center;
         gap: 9px;
-    }
-
-    &_icons {
-        width: 35px;
-        height: 35px;
     }
 
     &_btn {
@@ -87,5 +84,38 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 863px){
+    .about{
+        padding: 13px 15px;
+
+        &_boxs{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        &_box{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_icons{
+            width: 100%;
+            height: auto;
+        }
+
+
+        &mix{
+            width: 100%;
+        }
+
+        &_text2{
+            width: 100%;
+        }
     }
 }

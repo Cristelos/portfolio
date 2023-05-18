@@ -67,3 +67,41 @@
         background-color: #EFEFF2;
     }
 }
+@media screen and (min-width: 0) and (max-width: 863px){
+    .skills{
+        padding: 10px 15px;
+
+        &_box{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_box1{
+            width: 100%;
+            display: block;
+        }
+
+        &mix{
+            width: 100%;
+        }
+
+        &_text2{
+            width: 100%;
+        }
+
+        &_btn {
+            border: none;
+            border-radius: 50px;
+            padding: 8px;
+            width: 35px;
+            height: 35px;
+            background-color: #4cc7d0;
+            position: inherit;
+            float: none;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+    }
+}

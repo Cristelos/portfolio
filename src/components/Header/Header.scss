@@ -126,3 +126,20 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 0) and (max-width: 863px){
+    .header{
+        
+
+        &_box{
+            display: block;
+            padding: 15px 15px;
+        }
+
+        &_little-box{
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+}
