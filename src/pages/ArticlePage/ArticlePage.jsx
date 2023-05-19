@@ -42,7 +42,10 @@ export const ArticlePage = () => {
               <h2>{details.title}</h2>
               <p className='date'>{details.date}</p>
               <p>{details.description}</p>
-              <a href={details.url}><button className='btn'>Ver más</button></a>
+              <div className='article_bottoms'>
+                <a href={details.url} target="_blank" rel="noopener noreferrer"><button className='article_btn'>Ver más</button></a>
+                <a href={details.git} target="_blank" rel="noopener noreferrer"><button className='article_btn article_2'>Ver repositorio <img src="/assets/icons8-github-60.png" alt="Logo github" className='article_btn-Logo'></img></button></a>
+              </div>
             </div>
           </div>
         </section>

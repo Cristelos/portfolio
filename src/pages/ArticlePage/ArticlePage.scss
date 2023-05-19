@@ -11,6 +11,46 @@
     &_img{
         width: 600px;
     }
+
+    &_bottoms{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &_btn{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 210px;
+        height: 48px;
+        margin: 0 auto;
+        border: none;
+        background-color: #f5d012;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        border-radius: 4px;
+        justify-content: center;
+        gap: 6px;
+        transition: 0.4s;
+      }
+
+    &_2{
+        background-color:#dfdfdf;
+    }
+
+    &_btn-Logo{
+        width: 15%;
+    }
+
+    &_btn:hover{
+        background-color: #26b7e3;
+    }
 }
 
 @media screen and (min-width: 0) and (max-width: 863px){

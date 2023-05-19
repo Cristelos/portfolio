@@ -33,16 +33,13 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 500;
 }
 
-.btn{
-  width: 150px;
-  height: 40px;
-  margin: 0 auto;
-  border: none;
-  background-color: #f5d012;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 50px;
-  margin-bottom: 40px;
-  border-radius: 4px;
+
+
+p{
+  line-height: 1.8rem;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }

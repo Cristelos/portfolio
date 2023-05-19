@@ -19,6 +19,7 @@ export const About = () => {
                             <img src='/assets/MongoDB-Logo.png' alt='Logo Mongodb' className='about_icon'/>
                             <img src='/assets/1280px-Node.js_logo.svg.png' alt='Logo Nodejs' className='about_icon'/>
                             <img src='/assets/php-1-logo-png-transparent.png' alt='Logo PHP' className='about_icon'/>
+                            <img src='/assets/icons8-git-100.png' alt='Logo Giy' className='about_icon'/>
                     </div>
                 </div>
                 <div className='about_box'>
@@ -35,7 +36,7 @@ export const About = () => {
                     <p className='about_number'>2</p>
                         <h3>Trabajo en equipo:</h3>
                     </div>
-                    <p className='about_text2'>Soy un/a apasionado/a por el trabajo en equipo y valoro la colaboración y la comunicación abierta. Mi enfoque se basa en comprender a fondo las metas y objetivos de cada proyecto, para así poder traducirlos en soluciones creativas y efectivas. Siempre estoy en búsqueda de nuevos desafíos y oportunidades para aprender y crecer profesionalmente.</p>
+                    <p className='about_text2'>Soy una apasionada por el trabajo en equipo y valoro la colaboración y la comunicación abierta. Mi enfoque se basa en comprender a fondo las metas y objetivos de cada proyecto, para así poder traducirlos en soluciones creativas y efectivas. Siempre estoy en búsqueda de nuevos desafíos y oportunidades para aprender y crecer profesionalmente.</p>
                     
                     </div>
                     <div className='about_details'>
