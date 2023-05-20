@@ -30,7 +30,7 @@ export const Destacados = () => {
         <div>
           <ButtonList categories={categories} filterCategory={filterCategory}/>
         </div>
-        <div className='destacados_articles'>
+        <div className='destacados_articles' >
           <ArticleList articles={articles}/>
         </div>
       </div>

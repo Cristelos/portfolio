@@ -1,3 +1,4 @@
+import Aos from 'aos';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -9,9 +10,11 @@ export const ArticleList = ({ articles }) => {
         setExpShown(expShown + 3)
     }
     const visibleArticles = articles.slice(0, expShown);
+
+    
   return (
     <>
-        <div className='article-list'>
+        <div className='article-list'  data-aos="fade-up">
             {visibleArticles.map(article => (
                 <div className='article-conteiner' key={article.id}>
                     <div className='img-container'>
