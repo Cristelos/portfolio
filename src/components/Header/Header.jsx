@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.scss'
 import { Nav } from './Nav'
 import { NavLink } from 'react-router-dom'
+import { motion } from "framer-motion";
 
 export const Header = () => {
   return (
@@ -9,7 +10,20 @@ export const Header = () => {
       <header className='header'>
         <Nav/>
         <div className='header_box'>
-          <div className='header_little-box'>
+          <motion.div className='header_little-box'
+            initial={{ 
+              x: -100,
+              opacity: 0
+              }}
+            transition={{
+              ease: "easeOut",
+              duration: 2
+            }}
+            animate={{
+              x:0,
+              opacity: 100
+              }}
+          >
             <h1 className='header_title'>Patricia Fernández<br /><span className='header_subtitle'>Full Stack Developer</span></h1>
             <p>¡Bienvenido/s! Soy una desarrolladora full stack y diseñadora web. Da una vuelta por mi página web y descúbre todo lo que puedo hacer por ti.</p>
             <div className='header_btn'>
@@ -21,10 +35,23 @@ export const Header = () => {
               <a href='https://github.com/Cristelos' target="_blank" rel="noopener noreferrer"><img src='/assets/icons8-github-60.png' alt='Logo github' /></a>
               <a href='https://www.linkedin.com/in/patricia-fernandez-ruibal/' target="_blank" rel="noopener noreferrer"><img src='/assets/icons8-linkedin-50.png' alt='Logo github' /></a>
             </div>
-          </div>
-          <div className='header_little-box'>
+          </motion.div>
+          <motion.div className='header_little-box'
+          initial={{ 
+            x: 100,
+            opacity: 0
+            }}
+            transition={{
+              ease: "easeOut",
+              duration: 2
+            }}
+            animate={{
+              x:0,
+              opacity:100
+              }}
+          >
             <img src='/assets/img-portada.png' alt='foto portada' className='header_img' />
-          </div>
+          </motion.div>
         </div>
       </header>
     </>

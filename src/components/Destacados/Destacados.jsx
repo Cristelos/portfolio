@@ -4,7 +4,6 @@ import { ButtonList } from './ButtonList'
 import { ArticleList } from './ArticleList'
 import data from '../../data/data'
 
-
 export const Destacados = () => {
 
   const allCategories = ['All',...new Set(data.map(article => article.category))];
@@ -30,7 +29,7 @@ export const Destacados = () => {
         <div>
           <ButtonList categories={categories} filterCategory={filterCategory}/>
         </div>
-        <div className='destacados_articles' >
+        <div className='destacados_articles'>
           <ArticleList articles={articles}/>
         </div>
       </div>

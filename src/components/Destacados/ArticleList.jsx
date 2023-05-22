@@ -1,4 +1,4 @@
-import Aos from 'aos';
+import { motion } from "framer-motion";
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -11,12 +11,24 @@ export const ArticleList = ({ articles }) => {
     }
     const visibleArticles = articles.slice(0, expShown);
 
+
     
   return (
     <>
-        <div className='article-list'  data-aos="fade-up">
+        <div className='article-list'>
             {visibleArticles.map(article => (
-                <div className='article-conteiner' key={article.id}>
+                <motion.div className='article-conteiner' key={article.id}
+                initial={{
+                    scale: 0.5,
+                    opacity: 0 }}
+                transition={{
+                    ease: "easeOut",
+                    duration: 1.5
+                }}
+                animate={{
+                    scale: 1,
+                    opacity: 100 }}
+                >
                     <div className='img-container'>
                        <NavLink to={`/article/${article.id}`}><img src={article.image} alt={article.title}/></NavLink>
                     </div>
@@ -27,7 +39,7 @@ export const ArticleList = ({ articles }) => {
                             <span>{article.ReadingTime}</span>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             ))}
             
         </div>
